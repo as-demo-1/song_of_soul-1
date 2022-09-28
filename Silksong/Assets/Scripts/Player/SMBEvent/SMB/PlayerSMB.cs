@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Animations;
 
-public class PlayerSMB : SceneLinkedSMB<PlayerController>
+public class PlayerSMB: SceneLinkedSMB<PlayerController>
 {
   /*  public AnimatorStateInfo PreviousStateInfo { get; private set; }
     public AnimatorStateInfo CurrentStateInfo { get; private set; }
@@ -47,7 +47,7 @@ public class PlayerSMB : SceneLinkedSMB<PlayerController>
         }
     }*/
 
-        //子类将不再调用一下sealed方法
+        //瀛愮被灏嗕笉鍐嶈皟鐢ㄤ竴涓媠ealed鏂规硶
     public sealed override void OnSLStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) { }
 
     public sealed override void OnSLTransitionToStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) { }
